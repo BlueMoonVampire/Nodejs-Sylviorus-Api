@@ -1,20 +1,20 @@
-let mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
-	_userid: mongoose.Types.ObjectId,
-	userid: 
-	{ 
-		type : String
-	},
-	name: 
-	{ 
-		type : String
-	},
-	reason: 
-	{ 
-		type : String
-	}
+var UserSchema = new Schema({
+  userid: {
+    type: Number,
+    unique: true,
+    required: true
+  },
+  name: {
+    type: String,
+    required: true
+  },
+  reason: {
+    type: String,
+    required: true
+  }
+}, { collection: 'dataUser' });
 
-});
 module.exports = mongoose.model('User', UserSchema);
