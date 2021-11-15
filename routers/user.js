@@ -2,7 +2,7 @@ const User = require('../modules/User');
 
 const router = require("express").Router();
 
-router.get("/getInfo/:id", async(req, res) =>{
+router.get("/:id", async(req, res) =>{
             const id = request.params.id
          try {
             const sylviorus = await sylviorus.findOne({ userid: id })
