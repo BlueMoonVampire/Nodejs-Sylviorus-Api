@@ -1,0 +1,25 @@
+{
+  "name": "Sylviorus Api",
+  "version": "1.0.0",
+  "description": "Sylviorus API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoeZilla/Sylviorus-Api.git"
+  },
+  "keywords": [],
+  "author": "MoeZilla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoeZilla/Sylviorus-Api/issues"
+  },
+  "homepage": "https://github.com/MoeZilla/Sylviorus-Api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^4.2.9"
+  }
+}
