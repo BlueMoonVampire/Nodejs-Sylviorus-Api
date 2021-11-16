@@ -16,6 +16,12 @@ moe.use(cors())
 moe.use(express.json())
 moe.use(express.urlencoded({ extended: false }))
 
+app.get("/alive/check", (req, res) => {
+    res.status(200).json({
+        "fucm",
+
+    });
+});
 
 moe.use('/getinfo', UserRouter);
 
