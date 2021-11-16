@@ -2,7 +2,7 @@ const express = require('express');
 const moe = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000
-const User = require('../models/User');
+const User = require('./models/User');
 
 const cors = require('cors')
 const NodeCache = require('node-cache')
