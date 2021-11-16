@@ -16,9 +16,9 @@ moe.use(cors())
 moe.use(express.json())
 moe.use(express.urlencoded({ extended: false }))
 
-moe.get("/api/home", (req, res) => {
+moe.get("/", (req, res) => {
     res.status(200).json({
-        "api": "k",
+        "api": "getinfo/{userid}",
 
     });
 });
