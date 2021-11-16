@@ -16,9 +16,9 @@ moe.use(cors())
 moe.use(express.json())
 moe.use(express.urlencoded({ extended: false }))
 
-app.get("/alive/check", (req, res) => {
+app.get("/api/home", (req, res) => {
     res.status(200).json({
-        "fucm"
+        "api": "k",
 
     });
 });
