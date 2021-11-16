@@ -1,11 +1,10 @@
 const express = require('express');
+const moe = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000
-const UserRouter = require('./routers/item');
+const UserRouter = require('./routers/user');
 
-const moe = express();
 
-const port = process.env.PORT || 5000
 const host = process.env.host
 const db = process.env.db
 
