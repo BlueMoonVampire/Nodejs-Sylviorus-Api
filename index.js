@@ -12,6 +12,10 @@ const db = process.env.db
 
 mongoose.connect('mongodb://' + host + '/' + db);
 
+moe.use(cors())
+moe.use(express.json())
+moe.use(express.urlencoded({ extended: false }))
+
 
 moe.use('/getinfo', UserRouter);
 
