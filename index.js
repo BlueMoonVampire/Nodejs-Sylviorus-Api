@@ -23,7 +23,7 @@ moe.get("/api/home", (req, res) => {
     });
 });
 
-moe.use('/getinfo', UserRouter);
+moe.use('/', UserRouter);
 
 moe.listen( port, () => {
     console.log(`Connected to port ${port}`)
