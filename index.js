@@ -2,7 +2,7 @@ const express = require('express');
 const moe = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000
-const UserRouter = require('./routers/user');
+const User = require('../models/User');
 
 const cors = require('cors')
 const NodeCache = require('node-cache')
@@ -23,7 +23,19 @@ moe.get("/api/home", (req, res) => {
     });
 });
 
-moe.use('/', UserRouter);
+moe.get("/getinfo/:id", async(req, res) =>{
+            const id = request.params.id
+         try {
+            const User = await sylviorus.findOne({ user: id })
+            res
+            .status(200)
+            .json(User);
+        } catch (err) {
+            res
+            .status(500)
+            .json(err);
+        }
+});
 
 moe.listen( port, () => {
     console.log(`Connected to port ${port}`)
