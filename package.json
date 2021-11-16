@@ -2,10 +2,10 @@
   "name": "Sylviorus",
   "version": "1.0.0",
   "description": "Sylviorus",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main.js"
+    "dev": "nodemon index.js"
   },
   "author": "moezilla",
   "license": "ISC",
