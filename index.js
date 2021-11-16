@@ -3,6 +3,8 @@ const moe = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000
 
+const sylviorus = require('./models/User');
+
 const cors = require('cors')
 const NodeCache = require('node-cache')
 
