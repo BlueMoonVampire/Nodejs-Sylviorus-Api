@@ -3,7 +3,7 @@ const moe = express();
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000
 
-const sylviorus = require('./models/User');
+const vanitas = require('./models/User');
 
 const cors = require('cors')
 const NodeCache = require('node-cache')
@@ -26,7 +26,7 @@ moe.get("/home", (req, res) => {
 
 moe.get("/getinfo/:id", async(req, res) =>{
             const id = request.params.id
-            const user = await sylviorus.findOne({ user: id })
+            const user = await vanitas.findOne({ user: id })
             res
             .status(200)
             .json(user);
